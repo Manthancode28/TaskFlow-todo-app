@@ -1,0 +1,145 @@
+.feature-container {
+    position: relative;
+    width: 700px;
+    height: 700px;
+}
+
+.feature-center {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.feature-circle {
+    width: 180px;
+    height: 180px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 0 10px lightgreen;
+}
+
+
+/* Positioning the circles with gaps */
+
+.feature-1 {
+    top: 38%;
+    left: -10%;
+    transform: translateX(-50%);
+}
+
+.feature-2 {
+    top: 20%;
+    left: 2%;
+}
+
+.feature-3 {
+    top: 20%;
+    right: 2%;
+}
+
+.feature-4 {
+    bottom: 20%;
+    left: 2%;
+}
+
+.feature-5 {
+    bottom: 20%;
+    right: 2%;
+}
+
+.feature-6 {
+    top: 38%;
+    right: -10%;
+    transform: translateX(50%);
+}
+
+.dotted-feature {
+    width: 330px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px dotted black;
+}
+
+.line1 {
+    position: absolute;
+    top: 50%;
+    left: 73%;
+    width: 170px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.448);
+}
+
+.line2 {
+    position: absolute;
+    top: 50%;
+    right: 73%;
+    width: 170px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.448);
+}
+
+.line3 {
+    position: absolute;
+    width: 140px;
+    top: 35%;
+    left: 10%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.448);
+    transform: rotate(30deg);
+}
+
+.line4 {
+    position: absolute;
+    width: 140px;
+    top: 35%;
+    right: 10%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.448);
+    transform: rotate(-30deg);
+}
+
+.line5 {
+    position: absolute;
+    width: 140px;
+    bottom: 35%;
+    left: 10%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.448);
+    transform: rotate(330deg);
+}
+
+.line6 {
+    position: absolute;
+    width: 140px;
+    bottom: 35%;
+    right: 10%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.448);
+    transform: rotate(-330deg);
+}

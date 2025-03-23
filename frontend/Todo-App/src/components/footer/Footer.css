@@ -1,0 +1,57 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgba(255, 221, 221, 0.562); */
+    background-color: #e6e6e6;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+}
+
+.contact {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact svg {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact svg:hover {
+    transform: scale(1.2);
+}
+
+
+/* Responsive Adjustments */
+
+
+/* 
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact {
+        margin-top: 10px;
+        justify-content: center;
+    }
+} */
+
+.linkedin {
+    color: black;
+}
+
+.mail {
+    color: black;
+}

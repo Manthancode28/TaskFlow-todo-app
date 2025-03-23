@@ -1,0 +1,262 @@
+ /* .todo {
+     height: 100vh;
+     width: 100%;
+     position: relative;
+ }
+ 
+ .todo-inp {
+     border: none;
+     outline: none;
+ }
+ 
+ .todo-inp-div {
+     border-radius: 9px;
+     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+ }
+ 
+ #textarea {
+     display: none;
+ }
+ 
+ .add-todo {
+     border: none;
+     outline: none;
+     color: white;
+     padding: 10px;
+     font-weight: bold;
+     border-radius: 0.5rem;
+ }
+ 
+ .todo-main {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .todo-cards {
+     border: 1px solid black;
+     color: black;
+ }
+ 
+ .todo-cards p {
+     text-align: justify;
+     text-justify: inter-word;
+ }
+ 
+ .card-icons {
+     font-size: 20px;
+     cursor: pointer;
+ }
+ 
+ .del {
+     color: red;
+ }
+ 
+ .card-icon1:hover {
+     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+     cursor: pointer;
+ }
+ 
+ .todo-update {
+     position: absolute;
+     width: 80%;
+     height: 80vh;
+     top: 80px;
+     left: 10%;
+     position: fixed;
+     background-color: blanchedalmond;
+     display: none;
+     border-radius: 1rem;
+ }
+ 
+ .change-main-content {
+     opacity: 0;
+ } */
+ 
+ .todo {
+     background-color: white;
+     color: #333;
+     font-family: 'Arial', sans-serif;
+     padding: 20px;
+     min-height: 100vh;
+ }
+ 
+ .todo-main {
+     width: 70%;
+     margin: 0 auto;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .todo-inp-div {
+     background-color: #f9f9f9;
+     border-radius: 8px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+ }
+ 
+ .todo-inp {
+     border: 1px solid #ddd;
+     border-radius: 4px;
+     margin-bottom: 10px;
+     padding: 10px;
+     font-size: 16px;
+     width: 100%;
+     box-sizing: border-box;
+ }
+ 
+ .todo-inp:focus {
+     border-color: #008D2C;
+     outline: none;
+ }
+ 
+ #textarea {
+     display: none;
+     height: 100px;
+     resize: none;
+ }
+ /* Add Button */
+ 
+ .add-todo {
+     background-color: #008D2C;
+     color: white;
+     border: none;
+     border-radius: 4px;
+     padding: 10px 20px;
+     font-size: 16px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+ 
+ .add-todo:hover {
+     background-color: #007a26;
+ }
+ /* Todo Cards Section */
+ 
+ .todo-body {
+     margin-top: 30px;
+     font-family: "Plus Jakarta Sans", sans-serif;
+ }
+ 
+ .row-cards {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+ }
+ 
+ .todo-text {
+     flex: 1 1 calc(25% - 20px);
+     background-color: #f9f9f9;
+     border-radius: 8px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+ .todo-text:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+ /* Responsive Design */
+ 
+ @media (max-width: 768px) {
+     .col-lg-3 {
+         flex: 1 1 calc(50% - 20px);
+     }
+     .todo-main {
+         width: 100% !important;
+     }
+ }
+ 
+ @media (max-width: 480px) {
+     .col-lg-3 {
+         flex: 1 1 100%;
+     }
+     .todo-main {
+         width: 100% !important;
+     }
+ }
+ /* TodoCards Stylling */
+ /* TodoCards Styling */
+ 
+ .todo-cards {
+     background-color: white;
+     border: 1px solid #e0e0e0;
+     border-radius: 8px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     margin-bottom: 20px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+ .todo-cards:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .todo-cards h5 {
+     color: #333;
+     font-size: 1.25rem;
+     margin-bottom: 10px;
+ }
+ 
+ .todo-cards p {
+     color: #666;
+     font-size: 0.9rem;
+     line-height: 1.5;
+     margin-bottom: 15px;
+ }
+ /* Card Icons Styling */
+ 
+ .card-icons-head {
+     border-top: 1px solid #e0e0e0;
+     padding-top: 10px;
+ }
+ 
+ .card-icon1 {
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+     border-radius: 4px;
+     transition: background-color 0.3s ease, color 0.3s ease;
+ }
+ 
+ .card-icon1:hover {
+     box-shadow: 0 0 5px #008D2C;
+     color: black !important;
+ }
+ 
+ .card-icons {
+     font-size: 1.2rem;
+     margin-right: 5px;
+     transition: color 0.3s ease;
+ }
+ /* Delete Icon Specific Styling */
+ 
+ .del {
+     color: #ff4d4d;
+ }
+ 
+ .todo-update {
+     position: absolute;
+     width: 80%;
+     height: 80vh;
+     top: 80px;
+     left: 10%;
+     position: fixed;
+     background-color: blanchedalmond;
+     display: none;
+     border-radius: 1rem;
+ }
+ 
+ .change-main-content {
+     opacity: 0;
+ }
+ 
+ .due-date {
+     color: #ff4d4d;
+     /* Red color for urgency */
+     font-size: 0.8rem;
+     margin-top: 10px;
+ }

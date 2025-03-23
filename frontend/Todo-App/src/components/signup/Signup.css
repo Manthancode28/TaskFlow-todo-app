@@ -1,0 +1,52 @@
+.signup {
+    height: 100vh;
+    width: 100%;
+}
+
+.right-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-left: 1px solid black;
+}
+
+.left-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sign-up-heading {
+    font-size: 100px;
+    color: #008D2C;
+    opacity: 0.8;
+}
+
+.btn-signup {
+    background-color: #008D2C;
+    color: white;
+    outline: none;
+    border-radius: 2rem;
+    border: none;
+    height: 2.5rem;
+}
+
+.left-sign-content {
+    padding: 3rem;
+    border: 1px solid #74C476;
+    height: 70%;
+    justify-content: center;
+    position: relative;
+    right: 5%;
+    width: 60%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px #74C476;
+}
+
+.inp-singup {
+    border-radius: 0.5rem;
+    outline: none;
+    border: 0.5px solid;
+}
